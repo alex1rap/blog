@@ -29,6 +29,10 @@ Route::get('/posts/{post}/edit', [App\Http\Controllers\PostController::class, 'e
 
 Route::patch('/posts/{post}', [App\Http\Controllers\PostController::class, 'update']);
 
+Route::get('/posts/{post}/like', [App\Http\Controllers\PostController::class, 'like']);
+
+Route::get('/posts/{post}/dislike', [App\Http\Controllers\PostController::class, 'dislike']);
+
 Route::delete('/posts/{post}', [App\Http\Controllers\PostController::class, 'destroy']);
 
 
